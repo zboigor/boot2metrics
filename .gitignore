@@ -1,0 +1,7 @@
+.idea/
+*.iml
+.mvn/
+target/
+
+selenium_standalone_binaries/
+selenium_standalone_zips/
