@@ -8,7 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 public class RestService0Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(RestService0Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(RestService0Application.class, args);
+    }
 }

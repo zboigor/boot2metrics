@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/r")
 public class HelloController {
 
     private final DiscoveryClient discoveryClient;
@@ -30,7 +30,7 @@ public class HelloController {
     public List<ServiceInstance> serviceInstancesByApplicationName() {
         List<ServiceInstance> instances = new ArrayList<>();
 
-        for (String service: discoveryClient.getServices()) {
+        for (String service : discoveryClient.getServices()) {
             instances.addAll(discoveryClient.getInstances(service));
         }
         return instances;

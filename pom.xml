@@ -22,6 +22,7 @@
         <module>rest-service-0</module>
         <module>rest-service-1</module>
         <module>service-registry</module>
+        <module>gateway</module>
     </modules>
 
     <dependencyManagement>

@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: gateway
+
+server:
+  port: 8080
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
+
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
+
+zuul:
+  ignoredServices: 'grpc-service'
+  routes:
+    rest-service:
+      path: /api/r/**
+      stripPrefix: false
+      serviceId: rest-service
