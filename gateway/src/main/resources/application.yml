@@ -1,9 +1,15 @@
 spring:
   application:
     name: gateway
+  security:
+    user:
+      name: admin
+      password: pass
+      roles: ACTUATOR
 
 server:
   port: 8080
+
 
 hystrix:
   command:
@@ -24,3 +30,8 @@ zuul:
       path: /api/r/**
       stripPrefix: false
       serviceId: rest-service
+
+management:
+  endpoint:
+    health:
+      show-details: when_authorized
