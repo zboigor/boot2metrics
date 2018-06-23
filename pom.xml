@@ -7,7 +7,7 @@
     <groupId>com.coherentsolutions</groupId>
     <artifactId>boot-rest-grpc</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <grpc.version>1.11.0</grpc.version>
@@ -16,9 +16,6 @@
 
     <modules>
         <module>common-dto</module>
-        <module>common-proto</module>
-        <module>grpc-service-0</module>
-        <module>grpc-service-1</module>
         <module>rest-service-0</module>
         <module>rest-service-1</module>
         <module>service-registry</module>
