@@ -30,7 +30,7 @@ build-backend:
     - cp ./rest-service-0/target/rest-service-0-1.0.jar /var/bootrest
     - cp ./rest-service-1/target/rest-service-1-1.0.jar /var/bootrest
     - cp ./gateway/target/gateway-1.0.jar /var/bootrest
-    - cp ../ansible-playbook.yml /var/todoz/ansible-playbook.yml
+    - cp ./ansible-playbook.yml /var/bootrest/ansible-playbook.yml
 
 deploy-backend:
   stage: deploy
@@ -38,4 +38,4 @@ deploy-backend:
   only:
     - master
   script:
-    ansible-playbook /var/todoz/ansible-playbook.yml
+    ansible-playbook /var/bootrest/ansible-playbook.yml
