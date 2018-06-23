@@ -1,0 +1,46 @@
+- hosts: bootrest
+  remote_user: root
+  tasks:
+  - name: test connection
+    ping:
+
+  - name: copy service-registry jar
+    copy:
+      src: /var/bootrest/service-registry-1.0.jar
+      dest: /var/bootrest/service-registry.jar
+
+  - name: restart service-registry
+    service:
+      name: service-registry
+      state: restarted
+
+  - name: copy gateway jar
+    copy:
+      src: /var/bootrest/gateway-1.0.jar
+      dest: /var/bootrest/gateway.jar
+
+  - name: restart gateway
+    service:
+      name: gateway
+      state: restarted
+
+  - name: copy rest-service-0 jar
+    copy:
+      src: /var/bootrest/rest-service-0-1.0.jar
+      dest: /var/bootrest/rest-service-0.jar
+
+  - name: restart rest-service-0
+    service:
+      name: rest-service-0
+      state: restarted
+
+  - name: copy rest-service-1 jar
+    copy:
+      src: /var/bootrest/rest-service-1-1.0.jar
+      dest: /var/bootrest/rest-service-1.jar
+
+  - name: restart rest-service-1
+    service:
+      name: rest-service-1
+      state: restarted
+
