@@ -17,11 +17,11 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 30000
+            timeoutInMilliseconds: 35000
 
 ribbon:
-  ReadTimeout: 15000
-  ConnectTimeout: 15000
+  ConnectTimeout: 3000
+  ReadTimeout: 30000
 
 
 eureka:
