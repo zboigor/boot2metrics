@@ -13,7 +13,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/actuator/health", "/actuator/info")
+                .antMatchers("/actuator/health", "/actuator/info", "/actuator/prometheus")
                     .permitAll()
                 .antMatchers("/actuator/**")
                     .hasRole("ACTUATOR")
