@@ -19,6 +19,7 @@
         <module>rest-service-1</module>
         <module>service-registry</module>
         <module>gateway</module>
+        <module>http-test</module>
     </modules>
 
     <dependencyManagement>
