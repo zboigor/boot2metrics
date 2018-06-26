@@ -58,4 +58,4 @@ management:
       sla:
         http:
           server:
-            requests: [100ms, 200ms, 400ms, 600ms, 800ms, 1s, 1.5s, 2s, 5s, 6s]
+            requests: [100ms, 200ms, 400ms, 600ms, 800ms, 1s, 1500ms, 2s, 5s, 6s]
